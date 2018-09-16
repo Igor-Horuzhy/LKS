@@ -104,3 +104,30 @@
     padding: 5px;
     filter: grayscale(50%);
 }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+	background-color: black;
+    color: red;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+}
+
+tr:nth-child(odd) {
+   background-color: red;
+}
+
+tr:nth-child(even) {
+   background-color: green;
+}
+
