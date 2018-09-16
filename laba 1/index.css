@@ -91,3 +91,16 @@
 	background: purple;
     padding: 50px;
 }
+
+.img1 {
+	border-radius: 50%;
+	opacity: 0.7;
+}
+
+.img2 {
+	width: 290px;
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    filter: grayscale(50%);
+}
