@@ -1,0 +1,26 @@
+.task1 {
+	color: green;
+}
+
+.task2 {
+	background: purple;
+}
+
+.task3 {
+	text-decoration: overline;
+	text-transform: uppercase;
+}
+
+.task4 {
+	font-style: italic;
+}
+
+.task5 {
+	color: yellow;
+}
+
+.task6 {
+	color: red;
+	background: black;
+	font-style: italic;
+}
