@@ -79,3 +79,15 @@
 	color: black;
 	text-align: right;
 }
+
+.unordered {
+	list-style-position: inside;
+	background: #ff9999;
+    padding: 20px;
+     list-style-image: url('https://static.addtoany.com/buttons/favicon.png');
+}
+
+.ordered {
+	background: purple;
+    padding: 50px;
+}
