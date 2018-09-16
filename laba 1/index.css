@@ -24,3 +24,58 @@
 	background: black;
 	font-style: italic;
 }
+
+
+.link1 {
+	color:red;
+}
+
+.link2:hover {
+	color:blue;
+	font-size: 25px;
+}
+
+.link3 {
+	background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.link3:hover {
+	text-decoration: underline;
+	color: yellow;
+	background-color: black;
+}
+
+.link4 {
+	background-color: green;
+    color: white;
+    padding: 14px 25px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.link4:active {
+	color:black;
+	background-color: white;
+	font-style: italic;
+}
+
+.link5 {
+	background-color: black;
+    color: red;
+    padding: 14px 25px;
+    text-align: left;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.link5:hover {
+	background-color: blue;
+	color: black;
+	text-align: right;
+}
