@@ -37,11 +37,11 @@
 
 .link3 {
 	background-color: #f44336;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    	color: white;
+   	padding: 14px 25px;
+    	text-align: center;
+   	text-decoration: none;
+    	display: inline-block;
 }
 
 .link3:hover {
@@ -52,11 +52,11 @@
 
 .link4 {
 	background-color: green;
-    color: white;
-    padding: 14px 25px;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
+    	color: white;
+    	padding: 14px 25px;
+    	text-align: left;
+    	text-decoration: none;
+    	display: inline-block;
 }
 
 .link4:active {
@@ -67,11 +67,11 @@
 
 .link5 {
 	background-color: black;
-    color: red;
-    padding: 14px 25px;
-    text-align: left;
-    text-decoration: underline;
-    display: inline-block;
+    	color: red;
+    	padding: 14px 25px;
+    	text-align: left;
+    	text-decoration: underline;
+    	display: inline-block;
 }
 
 .link5:hover {
@@ -83,13 +83,13 @@
 .unordered {
 	list-style-position: inside;
 	background: #ff9999;
-    padding: 20px;
-     list-style-image: url('https://static.addtoany.com/buttons/favicon.png');
+    	padding: 20px;
+     	list-style-image: url('https://static.addtoany.com/buttons/favicon.png');
 }
 
 .ordered {
 	background: purple;
-    padding: 50px;
+    	padding: 50px;
 }
 
 .img1 {
@@ -100,34 +100,34 @@
 .img2 {
 	width: 290px;
 	border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    filter: grayscale(50%);
+    	border-radius: 4px;
+    	padding: 5px;
+    	filter: grayscale(50%);
 }
 
 table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+    	font-family: arial, sans-serif;
+    	border-collapse: collapse;
+    	width: 100%;
 }
 
 th {
 	background-color: black;
-    color: red;
+    	color: red;
 }
 
 td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+    	border: 1px solid #dddddd;
+    	text-align: left;
+    	padding: 8px;
 
 }
 
 tr:nth-child(odd) {
-   background-color: red;
+   	background-color: red;
 }
 
 tr:nth-child(even) {
-   background-color: green;
+   	background-color: green;
 }
 
