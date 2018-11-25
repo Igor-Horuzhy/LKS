@@ -1,0 +1,62 @@
+<link rel = "stylesheet" type = "text/css" href = "laba4.css">
+<script src="js/1.js "></script>
+<script src="js/2.js "></script>
+<script src="js/3.js "></script>
+
+<div class = "buttons">
+    <button class = "button1" onClick="document.getElementById('part1').style.display =  'flex'; document.getElementById('part2').style.display =  'none'; document.getElementById('part3').style.display =  'none' "> Part 1 </button>
+    <button class = "button2" onClick="document.getElementById('part1').style.display =  'none'; document.getElementById('part2').style.display =  'flex'; document.getElementById('part3').style.display =  'none'"> Part 2 </button>
+    <button class = "button3" onClick="document.getElementById('part1').style.display =  'none'; document.getElementById('part2').style.display =  'none'; document.getElementById('part3').style.display =  'flex'"> Part 3 </button>
+</div>
+
+
+<div id = "part1">
+    <div class = "canvas" id="canvas">
+        <table id="table">
+
+        </table>
+    </div>
+
+    <div class = "utils">
+        <div class="radios">
+            <p> <input name="position" type="radio" value="In the beginning"> In the beginning </p>
+            <p> <input id="end" name="position" type="radio" value="In the end"> In the end </p>
+            <input id="text" name="text" type="text" placeholder="text">
+            <br>
+            <p>Choose color: </p>
+            <input id="color" name="colorpicker" type="color"  style="width:240px" >
+            <br>
+            <div class="addbutton" style="width: 50px; padding: 15px 0 0 50px;">
+            <button id="butt" onclick="addelem()" style="width: 150px; height: 50px;">
+                Add
+            </button>
+
+            <button id="butt" onclick="getStatistics()" style="width: 150px; height: 50px;">
+                Statistics
+            </button>
+        </div>
+    
+        </div>
+    </div>
+</div>
+
+<div id = "part2" style="display: none">
+
+	<div id = "canvas2">
+        
+    </div>
+
+    <div class = "utils">
+        	<button class="addButton2" onclick="addRectangle()" class="addRect">Add</button>
+    </div>
+</div>
+
+<div id = "part3" style="display: none">
+  	<div id = "canvas3">
+        
+    </div>
+
+    <div class = "utils">
+        	<button class="addButton3" onclick="addDraggableRect()" class="addRect">Add</button>
+    </div>
+</div>

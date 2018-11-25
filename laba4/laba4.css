@@ -1,0 +1,46 @@
+.buttons {
+    justify-content :center;
+    display         :flex;
+}
+
+.buttons > button {
+    width : 200px;
+    size  : 50px;
+    font-size : 20px;
+    margin: 0 60px;
+}
+
+#part1 {
+    display: flex;
+}
+
+.canvas, #canvas2, #canvas3 {
+    width  :120vw;
+    height :30vw;
+    border : 4px solid black;
+}
+
+.utils {
+    justify-content: center;
+    display         :flex;
+    width: 40vw;
+    border : 4px solid red;
+}
+
+td {
+	 width  :120vw;
+}
+
+.addButton2, .addButton3 {
+	 height: 100px;
+	 width: 150px;
+	 margin-top: 180px;
+	 font-size : 50px;
+}
+
+#highlight {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+    outline: 1px dashed black;
+}
