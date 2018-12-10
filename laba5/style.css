@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito'; 
+}
+
+header h1 {
+  text-align: center;
+  margin: 40px 0 40px 0;
+  color: #2793e6;
+}
+
+div movies {
+  display: flex;
+  flex-flow: wrap;
+  margin: auto;
+}
+
+section {
+  width: 20%;
+  margin: auto;
+  border: dashed;
+  position: relative;
+  height: 715px;
+  margin-bottom: 40px;
+}
+
+section h3 {
+  text-align: center;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 40px;
+  color: red;
+}
+
+section p {
+  font-size: 25px;
+  color: red;
+  margin-top: 20px;
+}
+
+.imgBox {
+  height: 350px;
+}
+
+.averageChek p{
+  margin-top: : 110px;
+}
+
+
+.checkBoxStyle {
+  padding-top: 50px;
+  margin-left: : 90px;
+}
