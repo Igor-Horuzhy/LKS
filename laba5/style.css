@@ -1,13 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Nunito'; 
+  font-family: -apple-system;
 }
 
 header h1 {
   text-align: center;
   margin: 40px 0 40px 0;
-  color: #2793e6;
+  color: #e93e13;
 }
 
 div movies {
@@ -40,15 +40,16 @@ section p {
 }
 
 .imgBox {
-  height: 350px;
+  height: 370px;
 }
 
-.averageChek p{
-  margin-top: : 110px;
+img{ 
+  width: 100%;
+  height: auto;  
 }
 
 
 .checkBoxStyle {
   padding-top: 50px;
-  margin-left: : 90px;
+  margin-left:  90px;
 }

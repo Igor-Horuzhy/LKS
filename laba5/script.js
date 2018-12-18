@@ -17,25 +17,19 @@ function init() {
   updateDisplay();
 
   function updateDisplay() {
+    
     for (let i = 0; i < listOfMovies.length; i++) {
-      fetchMovie(listOfMovies[i]);
+      getMovieImage(listOfMovies[i]);
     }
   }
 
-  function fetchMovie(movie) {
+  function getMovieImage(movie) {
     const posterCommonPath = "http://image.tmdb.org/t/p/w300";
     let url = posterCommonPath + movie.poster_path;
-
-    fetch(url).then(function(response) {
-        response.blob().then(function(blob) {
-          let objectURL = URL.createObjectURL(blob);
-
-          showmovie(objectURL, movie);
-        });
-    });
+    showmovie(url, movie);    
   }
 
-  function showmovie(objectURL, movie) {
+  function showmovie(url, movie) {
     let section = document.createElement("section");
     let heading = document.createElement("h3");
     let imgBox = document.createElement("div");
@@ -49,6 +43,7 @@ function init() {
 
     imgBox.setAttribute("class", "imgBox");
     chek.setAttribute("type", "checkbox");
+    
     averageAndChek.setAttribute("class", "averageChek");
     chekAndLabel.setAttribute("class","checkBoxStyle");
 
@@ -57,7 +52,7 @@ function init() {
     average.textContent = movie.vote_average;
     label.innerHTML = "Watch later";
     
-    image.src = objectURL;
+    image.src = url;
     image.alt = movie.name;
     
     main.appendChild(section);
