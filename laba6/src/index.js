@@ -44,6 +44,11 @@ function component() {
   stopButton.setAttribute('id','stop');
   stopButton.setAttribute('class','button');
   stopButton.innerHTML='Stop';
+
+  var slowTimer = document.createElement('button');
+  slowTimer.innerHTML='Start 0.5x timer';
+  slowTimer.setAttribute('id','0.5x');
+  slowTimer.setAttribute('class','button');
   
   
 
@@ -52,7 +57,8 @@ function component() {
   text.appendChild(textInput);   
   element.appendChild(text);
   element.appendChild(br);
-  element.appendChild(startButton); 
+  element.appendChild(startButton);
+  element.appendChild(slowTimer); 
   element.appendChild(resetButton);
   element.appendChild(pauseButton);
   element.appendChild(stopButton);

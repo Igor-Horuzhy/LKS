@@ -2,11 +2,13 @@ class Timer {
   constructor(inputSecs,callback) {
     this.paused  = false;
     this.started = false;
+    this.startedSlow = false;
     this.stopped = true;
     this.counter = 0 ;
     this.running = false;
     this.inputSecs = inputSecs;
     this.callback=callback;
+    this.interval = 1000;
     this.inputText = document.getElementById("text");
   }
 
@@ -57,7 +59,7 @@ class Timer {
         this.update(this.counter);
       }
 
-      setTimeout(() => this.loop(), 1000);
+      setTimeout(() => this.loop(), this.interval);
     }
   }
 }
@@ -74,7 +76,8 @@ window.onload = function() {
   let inputSecs = document.getElementById("seconds");
   const timer = new Timer(inputSecs,alertText);
   document.getElementById("start").onclick = function() {
-    timer.start();
+    timer.interval = 1000;
+    return timer.start();
   }
   document.getElementById("reset").onclick = function() { 
     return timer.reset(); 
@@ -85,5 +88,9 @@ window.onload = function() {
   document.getElementById("stop").onclick = function()  
   { 
     return timer.stop(); 
+  }
+  document.getElementById("0.5x").onclick = function() {
+    timer.interval = 2000;
+    return timer.start();
   }
 };
